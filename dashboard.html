@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+    <title>Monitoring Dashboard</title>
+  </head>
+  <body>
+    <main role="main">
+      <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+              <h1>System Dashboard</h1>
+              <br>
+              <h3 id="result">You are logged in as user <code>{{ user }}</code>.</h3>
+              <br>
+              <div class="container">
+                <b>System Status:</b>
+                <div>
+                  {{ status }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

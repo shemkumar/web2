@@ -49,4 +49,4 @@ def dashboard():
 
     return render_template("dashboard.html", user=user, status=status)
 
-app.run(debug=False, host="0.0.0.0")
+app.run(host='0.0.0.0', port=2024)

@@ -45,7 +45,7 @@ def dashboard():
     if user == "demo":
         status = "Welcome demo user! In the real app, you'd see your confidential system info here!"
     if user == "root@locahost":
-        status = "Welcome, to student care tracking system just for 000000000000  Most recent system information: " + FLAG
+        status = "Welcome, to root@localhost " + FLAG
 
     return render_template("dashboard.html", user=user, status=status)
 

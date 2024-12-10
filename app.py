@@ -3,7 +3,7 @@ import jwt
 
 app = Flask(__name__)
 
-SECRET_KEY = "lol"  # Replace with a secure key
+SECRET_KEY = "supersonic"  # Replace with a secure key
 ADMIN_PASSWORD = "thepasswordisnotea5ytog3tsohackthiswebsite"
 FLAG = "root@localhost{P@ssw0rDS_r_0pti0n4l}"
 

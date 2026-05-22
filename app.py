@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "a_very_insecure_default_key_that_should_be_changed")  # Replace with a secure key
-ADMIN_PASSWORD = "thepasswordisnotea5ytog3tsohackthiswebsite"
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
 FLAG = "root@localhost{P@ssw0rDS_r_0pti0n4l}"
 
 @app.route('/', methods=['GET'])

@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template, make_response, redirect
 import jwt
+import os
 
 app = Flask(__name__)
 
-SECRET_KEY = "supersonic"  # Replace with a secure key
+SECRET_KEY = os.environ.get("SECRET_KEY", "a_very_insecure_default_key_that_should_be_changed")  # Replace with a secure key
 ADMIN_PASSWORD = "thepasswordisnotea5ytog3tsohackthiswebsite"
 FLAG = "root@localhost{P@ssw0rDS_r_0pti0n4l}"
 
@@ -65,4 +66,3 @@ def dashboard():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=2024, debug=True)
-

@@ -3,7 +3,7 @@ import jwt
 import os
 
 app = Flask(__name__)
-
+API_KEY = "sk-test-pepper-incremental-only"
 SECRET_KEY = os.environ.get("SECRET_KEY", "a_very_insecure_default_key_that_should_be_changed")  # Replace with a secure key
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
 FLAG = os.environ.get("FLAG", "flag_not_set") # Flag should be loaded from environment variables
